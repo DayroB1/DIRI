@@ -10,11 +10,12 @@ const TaskLogging1: React.FC = () => {
             <div className="dashBottom"></div>
             <div className="circle"></div>
           </div>
-          <h1>Registro de Tareas</h1>
+          <h1 className='uppercase bg-orange-500 rounded'>Registro de Tareas</h1>
           <input
             type="text"
-            className="searchInput"
+            className="searchInput bg-gray-100"
             placeholder="Buscar ..."
+          
           />
           <div className="fa fa-search searchIcon"></div>
         </div>
