@@ -3,8 +3,11 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
-import Pacientes from './Modelo/Pacientes'
-import Ayuda from './Pages/Ayuda'
+import Pacientes from './ViewModel/Pacientes'
+import Ayuda from './View/Pages/Ayuda'
+import PreguntasFrecuentes from './View/Pages/PreguntasFrecuentes'
+import Referencias from './View/Pages/Referencias'
+import NoMatch from './View/Pages/404'
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -12,31 +15,16 @@ function App() {
   return (
      <>
      <Routes>
-      <Route path="/" element={<Pacientes/>}>
-      </Route>
-      <Route path="/Ayuda" element={<Ayuda/>}>
-      </Route>
+      <Route path="/" element={<Pacientes/>}></Route>
+      <Route path="/Ayuda" element={<Ayuda/>}></Route>
+
+      {/* Páginas anidadas en la página Ayuda */}
+      <Route path="/Ayuda/preguntas" element={<PreguntasFrecuentes />} />
+      <Route path="/Ayuda/referencias" element={<Referencias />} />
+
+      {/* Para definir la página de ruta no encontrada, se hace uso del componente creado 'NoMatch' al cual con el signo * se le indica que cualquier path que no tenga definida como una ruta, la marque como página desconocida */}
+      <Route path="*" element={<NoMatch/>}></Route>
      </Routes>
-  {/* //     <div>
-  //       <a href="https://vite.dev" target="_blank">
-  //         <img src={viteLogo} className="logo" alt="Vite logo" />
-  //       </a>
-  //       <a href="https://react.dev" target="_blank">
-  //         <img src={reactLogo} className="logo react" alt="React logo" />
-  //       </a>
-  //     </div>
-  //     <h1>Vite + React</h1>
-  //     <div className="card">
-  //       <button onClick={() => setCount((count) => count + 1)}>
-  //         count is {count}
-  //       </button>
-  //       <p>
-  //         Edit <code>src/App.tsx</code> and save to test HMR
-  //       </p>
-  //     </div>
-  //     <p className="read-the-docs">
-  //       Click on the Vite and React logos to learn more
-  //     </p> */}
     </>
    )
 }

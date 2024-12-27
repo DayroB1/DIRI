@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Los elementos con la className 'active' se mostrarán de un color más intenso y resaltan sobre las que no la tengan */
+nav a {
+  color: #ffc299;
+  text-decoration: underline;
+  margin-right: 10px;
+}
+
+nav a.active {
+  text-decoration: none;
+  color: #f28a66;
+  font-weight: bold;
+}
+
