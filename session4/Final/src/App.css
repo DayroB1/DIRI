@@ -1,0 +1,87 @@
+h1, h2 {
+    color: #333;
+    text-align: center;
+    color: chocolate;
+    font-weight: bold
+}
+
+.programs {
+    display: flex;
+    justify-content: flex-end; 
+    padding: 20px;
+}
+
+body {
+    background-color:lightgoldenrodyellow;
+}
+
+.description {
+    padding: 10px;
+    max-width: 1500px;
+    text-align:left;
+    font-size: 16px;
+}
+
+.programs .ulEnrol {
+  list-style: none;
+  margin: 20px;
+  padding: 20px;
+  background-color:antiquewhite;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid #000000;
+}
+
+.enrolForm {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    background-color: #fff;
+    box-shadow: 0 10px 10px rgba(128,128, 128);
+    border: 1px solid #000000;
+}
+
+.enrolForm label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.enrolForm input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.enrolForm input[type="submit"] {
+    width: 20%;
+    padding: 8px;
+    margin: 15px;
+    border: 2px solid #FF9966;
+    border-radius: 10px;
+    background-color:antiquewhite;
+}
+
+.message {
+    color:dodgerblue;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.enrolList {
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgba(128,128, 128);
+    padding: 10px; 
+}
+
+.enrolList .ms-DetailsHeader {
+    background-color:antiquewhite;
+    border: 1px solid #000000;
+}
+
