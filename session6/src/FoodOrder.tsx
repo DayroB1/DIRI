@@ -1,6 +1,6 @@
-import { MouseEventHandler, useContext, useState } from "react";
+import { MouseEventHandler, useState } from "react";
 import { MenuItem } from "./entities/entities";
-import { foodItemsContext } from "./App";
+//import { foodItemsContext } from "./App";
 import logger from "./services/logging";
 import { deleteOrderFromFirebase, saveOrderToFirebase, updateOrderToFirebase } from "./services/orderService";
 
@@ -27,7 +27,7 @@ function FoodOrder(props: FoodOrderProps) {
 
 
     //Uso del contexto
-    const menuItems = useContext(foodItemsContext);
+    //const menuItems = useContext(foodItemsContext);
 
     // Para el precio total
     const totalPrice = (Number(quantity) * props.food.price).toFixed(2);
