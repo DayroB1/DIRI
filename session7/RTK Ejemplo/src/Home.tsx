@@ -1,7 +1,8 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { RootState, AppDispatch } from './features/store';
+import { AppDispatch } from './features/store';
 import { fetchNewTime } from './features/timeSlice';
+import { RootState } from './types';
 
 const Home: React.FC = () => {
 //   const currentTime = useSelector((state: RootState) => state.time.currentTime);

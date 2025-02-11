@@ -12,17 +12,32 @@ const initialState: ExampleState = {
   error: undefined,
 };
 
-export const fetchNewTime = createAsyncThunk('time/fetchNewTime', async () => {
-  try {
-    await new Promise((resolve) => setTimeout(resolve, 2000)); // simulamos espera 2s
-    const success = Math.random() > 0.5; // 50% posibilidades de error
-    if (!success) throw new Error("Error obteniendo la hora");
-    return Date.now();
-    } catch (error: any) {
-    return rejectWithValue(error.message);
-    }
+//Se debe cambiar fetchNewTime
+// export const fetchNewTime = createAsyncThunk('time/fetchNewTime', async () => {
+//   try {
+//     await new Promise((resolve) => setTimeout(resolve, 2000)); // simulamos espera 2s
+//     const success = Math.random() > 0.5; // 50% posibilidades de error
+//     if (!success) throw new Error("Error obteniendo la hora");
+//     return Date.now();
+//     } catch (error: any) {
+//     return rejectWithValue(error.message);
+//     }
     
-});
+// });
+
+export const fetchNewTime = createAsyncThunk<number, void, { rejectValue: string }>(
+  'time/fetchNewTime',
+  async (_, thunkAPI) => {
+    try {
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+      const success = Math.random() > 0.5;
+      if (!success) throw new Error("Error obteniendo la hora");
+      return Date.now();
+    } catch (error: any) {
+      return thunkAPI.rejectWithValue(error.message);
+    }
+  }
+);
 
 const timeSlice = createSlice({
   name: 'time',
@@ -53,6 +68,7 @@ const timeSlice = createSlice({
 //export const { fetchNewTime } = timeSlice.actions;
 export default timeSlice.reducer;
 
-function rejectWithValue(message: any): any {
-  throw new Error('Se ha producido un error al actualizar la hora');
-}
+//Se reemplaza en fetchNewTime
+// function rejectWithValue(message: any): any {
+//   throw new Error('Se ha producido un error al actualizar la hora');
+// }
