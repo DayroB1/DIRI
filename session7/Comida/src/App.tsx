@@ -2,15 +2,15 @@ import { Suspense, useState, useEffect } from 'react';
 import './App.css';
 import { MenuItem } from './entities/entities';
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch} from 'react-redux';
 import { updateMenuItemQuantity } from './features/orderSlice';
-import { AppDispatch, RootState } from './features/store';
+import { AppDispatch } from './features/store';
 
 const Foods = React.lazy(() => import("./Foods"));
 
 function App() {
   const dispatch:AppDispatch = useDispatch();
-  const { orders } = useSelector((state: RootState) => state.orders);
+  //const { orders } = useSelector((state: RootState) => state.orders);
   const [isChooseFoodPage, setIsChooseFoodPage] = useState(false);
   const [menuItems, setMenuItems] = useState<MenuItem[]>([]);
 

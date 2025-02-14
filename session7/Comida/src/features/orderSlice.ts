@@ -101,7 +101,7 @@ const ordersSlice = createSlice({
         state.status = "failed";
         state.error = action.error.message || "Error al eliminar pedido";
       })
-      .addCase(updateMenuItemQuantity.fulfilled, (state, action) => {
+      .addCase(updateMenuItemQuantity.fulfilled, (_state, _action) => {
         // No modifica el estado de orders aquí, ya que solo se actualiza el menú
       })
       .addCase(updateMenuItemQuantity.rejected, (state, action) => {
