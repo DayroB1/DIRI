@@ -1,0 +1,144 @@
+/* Reset básico para quitar márgenes y padding por defecto */
+body, h1, h2, p, ul, li, button, input, form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos generales para toda la app */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+  }
+  
+  /* Contenedor principal para centrar todo */
+  .container {
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #222;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #444;
+  }
+  
+  /* Estilos de los botones */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  .button.login {
+    background-color: #0056b3;
+  }
+  
+  .button.register {
+    background-color: #218838;
+  }
+  
+  .button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Formularios */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #222;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .nav-menu li {
+    display: inline;
+  }
+  
+  .nav-menu a, .nav-menu button {
+    color: #f8f9fa;
+    text-decoration: none;
+    font-size: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-menu button:hover, .nav-menu a:hover {
+    text-decoration: underline;
+    color: #ffc107;
+  }
+  
+  /* Mensajes de error y éxito */
+  .error-message {
+    color: #dc3545;
+    font-size: 14px;
+  }
+  
+  .success-message {
+    color: #28a745;
+    font-size: 14px;
+  }
+  

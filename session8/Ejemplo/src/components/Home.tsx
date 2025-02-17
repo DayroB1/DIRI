@@ -1,18 +1,37 @@
+// import React from "react";
+// import { Link } from "react-router-dom";
+// import "../styles.css"
+
+// const Home: React.FC = () => {
+//   return (
+//     <div className="">
+//       <h1 className="">Bienvenido a la App</h1>
+//       <p className="">Explora nuestras funcionalidades.</p>
+//       <div className="button-container">
+//         <Link to="/login" className="button login">
+//           Iniciar Sesión
+//         </Link>
+//         <Link to="/register" className="button register">
+//           Registrarse
+//         </Link>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Home;
 import React from "react";
 import { Link } from "react-router-dom";
+import "../styles.css";
 
 const Home: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <h1 className="text-4xl font-bold text-gray-800">Bienvenido a la App</h1>
-      <p className="mt-2 text-gray-600">Explora nuestras funcionalidades.</p>
-      <div className="mt-4">
-        <Link to="/login" className="px-4 py-2 mr-2 bg-blue-500 text-white rounded hover:bg-blue-600">
-          Iniciar Sesión
-        </Link>
-        <Link to="/register" className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">
-          Registrarse
-        </Link>
+    <div>
+      <h1>Bienvenido a la App</h1>
+      <p>Explora nuestras funcionalidades.</p>
+      <div className="button-container">
+        <Link to="/login" className="button login">Iniciar Sesión</Link>
+        <Link to="/register" className="button register">Registrarse</Link>
       </div>
     </div>
   );
