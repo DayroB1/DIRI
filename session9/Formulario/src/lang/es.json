@@ -1,0 +1,10 @@
+{
+    "app.label.language": "Selecciona el idioma:",
+    "app.label.program": "Selecciona el tipo de estudio:",
+    "app.label.enrolments": "Matriculaciones Actuales:",
+    "app.label.enrolmentForm": "Datos del estudiante - {program}",
+    "app.label.firstName": "Nombre:",
+    "app.label.lastName": "Apellidos:",
+    "app.label.submit": "Registrar",
+    "app.label.welcomeMessage": "Bienvenido/a {firstName} {lastName}"
+  }
