@@ -33,7 +33,7 @@ function Foods() {
             <div onClick={() => handleFoodClick(item.id)}>
               <img
                 className="foodImg"
-                src={`FoodApp/images/${item.image}`}
+                src={`FoodApp-FirebaseAuth/images/${item.image}`}
                 alt={item.name}
               />
               <div className="foodItem">
