@@ -1,0 +1,236 @@
+body, h1, h2, p, ul, li, button, input, form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos generales para toda la app */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+  }
+  
+  /* Contenedor principal para centrar todo */
+  .container {
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #222;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #444;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  .button.login {
+    background-color: #0056b3;
+    margin: 10px;
+  }
+  
+  .button.register {
+    background-color: #218838;
+    margin: 10px;
+  }
+  
+  .button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Formularios */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #222;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .nav-menu li {
+    display: inline;
+  }
+  
+  .nav-menu a, .nav-menu button {
+    color: #f8f9fa;
+    text-decoration: none;
+    font-size: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-menu button:hover, .nav-menu a:hover {
+    text-decoration: underline;
+    color: #ffc107;
+  }
+  
+  /* Mensajes de error y éxito */
+  .error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .success-message {
+    color: #28a745;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  /* Estilos para los formularios de ingreso y registro */
+.style-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; 
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Contenedor para los botones */
+.button-container {
+  display: flex; 
+  justify-content: space-between; 
+  width: 100%; 
+  gap: 10px; 
+}
+
+.button-container button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Estilo específico para el botón "Volver" */
+.button-container .btn {
+  background-color: #f44336; 
+  color: white;
+}
+
+/* Estilo específico para el botón "Registrarse" */
+.button-container button[type="submit"] {
+  background-color: #4caf50; 
+  color: white;
+}
+
+  .submit-button, .update-button, .delete-button{
+    margin: 5px;
+  }
+  
+  /* Estilos para la lista de usuarios */
+.user-list {
+  list-style: none;
+  padding: 0;
+}
+
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.user-item span {
+  font-size: 16px;
+}
+
+.user-item button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.make-admin {
+  background-color: #4caf50;
+  color: white;
+}
+
+.revoke-admin {
+  background-color: #f44336;
+  color: white;
+}
