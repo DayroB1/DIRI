@@ -3,6 +3,8 @@ import EnrolmentForm from "./components/EnrolmentForm";
 import { FormattedMessage } from "react-intl";
 import { useContext } from "react";
 import { LanguageContext } from "./contexts/LanguageContext";
+//import ModalFinal from "./components/Modal";
+import Card from "./components/Card";
 
 function App() {
   const { changeLanguage, locale } = useContext(LanguageContext);
@@ -21,22 +23,18 @@ function App() {
   return (
     <div className="bg-gray-100 p-6">
 
-      <div className="mb-6">
+      <div className="mb-6 text-right">
         <label className="block font-medium text-orange-700">
           <FormattedMessage id="app.label.language" defaultMessage="Select language:" />
         </label>
         <select
           value={locale}
           onChange={(e) => changeLanguage(e.target.value)}
-          className="p-3 border border-green-700 rounded-md shadow-xl  focus:ring-2 focus:ring-indigo-500"
-        
-        >
+          className="p-3 border border-green-700 rounded-md shadow-xl  focus:ring-2 focus:ring-indigo-500">
           <option value="en">English</option>
           <option value="es">Español</option>
-        </select>
-      </div>
-
-      <div className="">
+          <option value="fr">Francés</option>
+        </select><br/><br/>
         <label className="block font-medium text-orange-700">
           <FormattedMessage id="app.label.program" />
         </label>
@@ -44,17 +42,22 @@ function App() {
           <option value={"UG"}>Grado</option>
           <option value={"PG"}>Postgrado</option>
         </select>
+      </div>
+
+      <div className="text-center">
+        <h1 className="font-bold text-blue-700 mb-6 text-4xl"><FormattedMessage id="app.label.title"/></h1>
         <div>
           <FormattedMessage id="app.label.enrolments" /> {enrolments}
-        </div>
-        <h1 className="font-bold text-gray-900 mb-6">Aplicación de Matriculación</h1>
+        </div><br/>
         <EnrolmentForm
           chosenProgram={program}
           onChangeEnrolments={handleChangeEnrolments}
           currentEnrolments={enrolments}
         />
+      <Card/>
       </div>
     </div>
+    
   );
 }
 

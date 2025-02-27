@@ -6,5 +6,11 @@
     "app.label.firstName": "First Name:",
     "app.label.lastName": "Last Name:",
     "app.label.submit": "Register",
-    "app.label.welcomeMessage": "Welcome {firstName} {lastName}"
-  }
+    "app.label.welcomeMessage": "Welcome {firstName} {lastName}",
+    "app.label.title": "Enrollment Application",
+    "app.modal.title": "Important question to finish",
+    "app.modal.description": "Do you really want to finish registering the enrolled students?",
+    "app.modal.details": "This application is used to register students in Undergraduate or Postgraduate programs. If you need any and want to add them later, you can continue doing so without problems.",      
+    "app.modal.confirm": "Understood",
+    "app.button.buttonText": "Finish"
+}

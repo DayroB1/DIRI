@@ -1,0 +1,16 @@
+{
+    "app.label.language": "Sélectionnez la langue :",
+    "app.label.program": "Sélectionnez le type d'études :",
+    "app.label.enrolments": "Inscriptions actuelles :",
+    "app.label.enrolmentForm": "Informations sur l'étudiant - {program}",
+    "app.label.firstName": "Prénom :",
+    "app.label.lastName": "Nom de famille :",
+    "app.label.submit": "Enregistrer",
+    "app.label.welcomeMessage": "Bienvenue {firstName} {lastName}",
+    "app.label.title": "Application d'inscription",
+    "app.modal.title": "Question importante pour terminer",
+    "app.modal.description": "Voulez-vous vraiment terminer l'enregistrement des étudiants inscrits ?",
+    "app.modal.details": "Cette application est utilisée pour inscrire des étudiants à des programmes de premier cycle ou de deuxième cycle. Si vous en avez besoin et souhaitez en ajouter plus tard, vous pouvez continuer à le faire sans problème.",
+    "app.modal.confirm": "Compris",
+    "app.button.buttonText": "Terminer"
+  }

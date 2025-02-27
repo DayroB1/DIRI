@@ -1,6 +1,7 @@
 import { createContext } from 'react';
 import esMessages from '../lang/es.json';
 import enMessages from '../lang/en.json';
+import frMessages from '../lang/fr.json';
 
 interface LanguageContextProps {
   locale: string;
@@ -11,6 +12,7 @@ interface LanguageContextProps {
 export const messagesMap: { [key: string]: Record<string, string> } = {
   en: enMessages,
   es: esMessages,
+  fr: frMessages,
 };
 
 export const LanguageContext = createContext<LanguageContextProps>({

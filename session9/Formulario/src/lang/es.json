@@ -6,5 +6,11 @@
     "app.label.firstName": "Nombre:",
     "app.label.lastName": "Apellidos:",
     "app.label.submit": "Registrar",
-    "app.label.welcomeMessage": "Bienvenido/a {firstName} {lastName}"
+    "app.label.welcomeMessage": "Bienvenido/a {firstName} {lastName}",
+    "app.label.title": "Aplicación de Matriculación",
+    "app.modal.title": "Pregunta importante para terminar",
+    "app.modal.description": "¿Realmente desea finalizar con el registro de los estudiantes matriculados?",
+    "app.modal.details": "Esta aplicación se usa para registrar estudiantes en programas de Pregrado o Posgrado, si le hiciera falta alguno y quiere añadirlo más adelante, puede seguir haciéndolo sin problema.",
+    "app.modal.confirm": "Entendido",
+    "app.button.buttonText": "Finalizar"
   }
